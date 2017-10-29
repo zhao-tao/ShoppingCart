@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShoppingCart</string>
+    <string name="shop">商城</string>
+    <string name="person">我</string>
+    <string name="cart">购物车</string>
+    <string name="count">立即结算</string>
+</resources>
