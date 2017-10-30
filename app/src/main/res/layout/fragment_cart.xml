@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:text="购物车" />
+            android:text="购物车"/>
 
-        <include layout="@layout/divide_line" />
+        <include layout="@layout/divide_line"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -29,24 +29,25 @@
                 <com.wg.test.shoppingcart.View.ScrollListView
                     android:id="@+id/lv_cart"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
 
                 <LinearLayout
                     android:id="@+id/ll_discount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
-                    <include layout="@layout/divide_line" />
+                    <include layout="@layout/divide_line"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginLeft="15dp"
                         android:gravity="center_vertical"
-                        android:text="折扣" />
+                        android:text="折扣"/>
 
-                    <include layout="@layout/divide_line" />
+                    <include layout="@layout/divide_line"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -59,7 +60,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="打折" />
+                            android:text="打折"/>
 
                         <TextView
                             android:id="@+id/tv_discount_date"
@@ -68,7 +69,7 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center_vertical"
                             android:text="截至日期：2017年10月31日"
-                            android:textSize="12dp" />
+                            android:textSize="12dp"/>
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -77,18 +78,19 @@
                     android:id="@+id/ll_coupon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
-                    <include layout="@layout/divide_line" />
+                    <include layout="@layout/divide_line"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginLeft="15dp"
                         android:gravity="center_vertical"
-                        android:text="优惠券" />
+                        android:text="优惠券"/>
 
-                    <include layout="@layout/divide_line" />
+                    <include layout="@layout/divide_line"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -101,7 +103,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="满减" />
+                            android:text="满减"/>
 
                         <TextView
                             android:id="@+id/tv_coupon_date"
@@ -110,10 +112,10 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center_vertical"
                             android:text="截至日期：2017年10月31日"
-                            android:textSize="12dp" />
+                            android:textSize="12dp"/>
                     </RelativeLayout>
 
-                    <include layout="@layout/divide_line" />
+                    <include layout="@layout/divide_line"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -134,7 +136,7 @@
             android:layout_weight="3"
             android:gravity="center_vertical"
             android:text="合计："
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"/>
 
         <Button
             android:id="@+id/btn_order"
@@ -142,7 +144,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/count" />
+            android:text="@string/count"/>
 
     </LinearLayout>
 

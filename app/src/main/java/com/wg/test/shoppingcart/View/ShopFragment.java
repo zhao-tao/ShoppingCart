@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.wg.test.shoppingcart.Adapter.ListAdapter;
+import com.wg.test.shoppingcart.Adapter.ShopListAdapter;
 import com.wg.test.shoppingcart.R;
 
 import static com.wg.test.shoppingcart.Consts.TYPE_DAILY;
@@ -28,7 +28,7 @@ public class ShopFragment extends Fragment {
     private ListView lvProduct;
     private MainActivity activity;
     private String currentType;
-    private ListAdapter listAdapter;
+    private ShopListAdapter shopListAdapter;
 
     @Nullable
     @Override
@@ -51,8 +51,8 @@ public class ShopFragment extends Fragment {
         tabType.getTabAt(0).select();
         currentType = TYPE_DIGIT;
 
-        listAdapter = new ListAdapter(activity, activity.productList, currentType);
-        lvProduct.setAdapter(listAdapter);
+        shopListAdapter = new ShopListAdapter(activity, activity.productList, currentType);
+        lvProduct.setAdapter(shopListAdapter);
 
     }
 
@@ -74,7 +74,7 @@ public class ShopFragment extends Fragment {
                         currentType = TYPE_LIQUOR;
                         break;
                 }
-                listAdapter.changeProductType(currentType);
+                shopListAdapter.changeProductType(currentType);
             }
 
             @Override

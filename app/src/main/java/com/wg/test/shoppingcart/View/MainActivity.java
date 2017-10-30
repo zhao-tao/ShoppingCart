@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         discountList.add(new DiscountEntity(TYPE_DIGIT, 70, null, Tools.getSystemDate()));
 //        初始化优惠券
         couponList = new ArrayList<>();
-        couponList.add(new CouponEntity(100000, 20000, null, "20200301"));
+        couponList.add(new CouponEntity(100000, 20000, null, "2020-03-01"));
     }
 
 
