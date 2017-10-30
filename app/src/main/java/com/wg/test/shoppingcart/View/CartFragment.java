@@ -76,8 +76,8 @@ public class CartFragment extends Fragment {
 	 * 计算总价
 	 * 根据题目的例子，倒推的逻辑为，现有的折扣和优惠券只能用一张，并且先使用折扣券
 	 */
-	private void calculatePrice(ArrayList<ProductEntity> data) {
-		if (null == data) return;
+	public BigDecimal calculatePrice(ArrayList<ProductEntity> data) {
+		if (null == data) return null;
 		int i = totalPrice(data);
 
 //		先使用折扣券，折扣券相关逻辑
@@ -116,6 +116,7 @@ public class CartFragment extends Fragment {
 		orderPrice = intToBigDecimal(i);
 
 		tvTotalPrice.setText("合计：￥" + intToBigDecimal(i));
+		return orderPrice;
 	}
 
 	/**
